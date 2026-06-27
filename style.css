@@ -22,6 +22,28 @@ body {
     background-color: royalblue;
 }
 
+#Loading_Screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    /* Counteracts the html zoom: 1.4 to fit the screen perfectly */
+    width: 71.42vw;
+    height: 71.42vh;
+    
+    /* Centers the text inside the loader */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    
+    /* Matches the background so it hides the content behind it */
+    background-color: royalblue; 
+    
+    /* Keeps it on top of everything else */
+    z-index: 9999; 
+}
+
 h1 {
     /* Makes the h1 element bold and underlines it */
     font-weight: bold;

@@ -1,5 +1,9 @@
 from pyscript import web, when #type: ignore
 
+# Hide the loading screen once Pyscript is loaded
+Loading_Screen = web.page["#Loading_Screen"]
+Loading_Screen.style["display"] = "none"
+
 # Intialise Global variables to access and update later
 selected_conversion = ""
 conversion_multiplier = None
