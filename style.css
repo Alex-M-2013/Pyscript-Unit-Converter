@@ -1,0 +1,43 @@
+html {
+    /* Sets scale of page */
+    zoom: 1.4;
+    
+    /* Centers elements */
+    display: grid;
+    place-items: start center; 
+    height: 100vh;
+
+    /* Hides vertical scrollbar */
+    overflow-y: hidden;
+}
+
+body {
+    /* Sets font */
+    font-family: "Trebuchet MS";
+    font-size: 18px;
+    color: white;
+    
+    /* Sets background colour */
+    /* background-color: rgb(76, 57, 200); */
+    background-color: royalblue;
+}
+
+h1 {
+    /* Makes the h1 element bold and underlines it */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+button {
+    /* When hovering over the button your cursor turns into a pointer */
+    cursor: pointer;
+    
+    /* Sets border and background colour of button */
+    background-color: white;
+    border-color: white;
+}
+
+#Output {
+    /* Makes the font size of the element with the "Output" id 94% of the default font size set in body */
+    font-size: 94%;
+}

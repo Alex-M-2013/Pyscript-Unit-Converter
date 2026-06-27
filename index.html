@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PyScript Unit Converter</title> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Links to the external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- PyScript core styles -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.3.1/core.css">
+    
+    <!-- PyScript runtime -->
+    <script type="module" src="https://pyscript.net/releases/2026.3.1/core.js"></script>
+</head>
+<body>
+    <h1>Pyscript Unit Converter</h1>
+    <h4>Select Unit:</h4>
+
+    <!-- Conversion selection dropdown menu-->
+    <select id="Select_Unit" py-change="handle_select" autocomplete="off">
+        <option value="" disabled selected hidden>Select a conversion...</option>
+        <option value="Miles to Kilometers">Miles to Kilometers</option>
+        <option value="Kilometers to Miles">Kilometers to Miles</option>
+    </select>
+    <br>
+    <br>
+    <br>
+
+    <!-- Numeric input for user value -->
+    <input 
+        type="number"
+        placeholder="Enter number"
+        id="User_Input"
+    >
+
+    <!-- Button to trigger conversion -->
+    <button 
+        id="Convert_Button"
+        autocomplete="off"
+    >Convert</button>
+    
+    <!-- Output area for conversion results -->
+    <p id="Output"></p>
+
+    <!-- Links to the PyScript Python logic file -->
+    <script
+        type="py"
+        src="main.py"
+    ></script>
+</body>
+</html>
