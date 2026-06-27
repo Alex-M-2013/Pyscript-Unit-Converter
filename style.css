@@ -26,6 +26,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    scale: 1.3;
     
     /* Counteracts the html zoom: 1.4 to fit the screen perfectly */
     width: 71.42vw;
@@ -33,6 +34,7 @@ body {
     
     /* Centers the text inside the loader */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 24px;
@@ -41,8 +43,30 @@ body {
     background-color: royalblue; 
     
     /* Keeps it on top of everything else */
-    z-index: 9999; 
+    z-index: 9998; 
 }
+
+.Spinner {
+    width: 48px;
+    height: 48px;
+    margin-top: 20px;
+    border: 5px solid #FFF;
+    /* border-bottom-color: #FF3D00; */
+    border-bottom-color: royalblue;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
 
 h1 {
     /* Makes the h1 element bold and underlines it */
