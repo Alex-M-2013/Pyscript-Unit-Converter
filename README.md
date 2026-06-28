@@ -1,5 +1,5 @@
 # Pyscript Unit Converter
-__Link:__ https://pyscript-unit-converter.netlify.app/
+__Link:__ https://alex-m-2013.github.io/Pyscript-Unit-Converter/
 
 A simple unit converter made in HTML, CSS and Python3 (Using [pyscript](https://pyscript.net/)) <br>
 The code could probably be more efficient and optimised but its just for fun 🤷‍♂️ <br> <br>
